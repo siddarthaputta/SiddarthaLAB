@@ -7,9 +7,9 @@ provider "azurerm" {
   features {}
 }
 
-data "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rg" {
   name     = "var.RG"
-  location = "centralus"
+  location = "var.location"
 }
 
 resource "azurerm_app_service_plan" "asp" {
