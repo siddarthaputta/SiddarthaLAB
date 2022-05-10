@@ -1,5 +1,5 @@
 provider "azurerm" {
-  version         = "=3.4.0"
+  version         = "3.5.0"
   tenant_id       = "7cd4df23-8549-4990-a42f-466ae042efb2"
   subscription_id = "dbd83e64-1091-4252-b081-fd0a0aea47fc"
   client_id       = "57031495-1d8b-4617-87ca-4cabcc63f0cc"
@@ -8,8 +8,8 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "var.RG"
-  location = "var.location"
+  name     = "testrg"
+  location = "centralus"
 }
 
 resource "azurerm_app_service_plan" "asp" {
